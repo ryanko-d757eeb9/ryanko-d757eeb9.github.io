@@ -1,0 +1,1683 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yandex官网入口网址-搜索导航_登录入口_功能对比</title>
+  <meta name="description" content="yandex官网入口网址导航页，提供搜索、邮箱、地图、翻译等服务的官方入口指引，适合需要快速找到Yandex核心功能的中文用户参考。">
+  <meta name="keywords" content="搜索入口导航,邮箱登录指引,地图服务入口,翻译功能入口,桌面端使用">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d40025'/%3E%3Ctext x='16' y='23' font-size='18' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3EY%3C/text%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --brand-red: #d40025;
+      --brand-red-dark: #a8001d;
+      --brand-red-light: #fff0f2;
+      --ink-strong: #1a1a1a;
+      --ink-body: #2f2f2f;
+      --ink-mid: #5a5a5a;
+      --ink-soft: #888888;
+      --line: #e6e6e6;
+      --line-strong: #cccccc;
+      --bg-body: #f7f7f8;
+      --bg-panel: #ffffff;
+      --bg-soft: #fafafa;
+      --radius-s: 6px;
+      --radius-m: 10px;
+      --radius-l: 16px;
+      --shadow-s: 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-m: 0 4px 16px rgba(0,0,0,0.06);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      --sticky-offset: 96px;
+      --container-max: 1360px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: var(--sticky-offset); }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-body);
+      color: var(--ink-body);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--brand-red); text-decoration: none; }
+    a:hover { color: var(--brand-red-dark); text-decoration: underline; }
+    ul, ol { list-style: none; }
+    img, svg { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; }
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== 吸顶公告 + 页头 ===== */
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-panel);
+      box-shadow: 0 1px 0 var(--line), var(--shadow-s);
+    }
+    .announce-bar {
+      background: var(--brand-red);
+      color: #fff;
+      font-size: 13px;
+      line-height: 36px;
+      height: 36px;
+      overflow: hidden;
+    }
+    .announce-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      white-space: nowrap;
+    }
+    .announce-bar strong {
+      background: rgba(255,255,255,0.2);
+      padding: 0 10px;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .site-header {
+      background: var(--bg-panel);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 64px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--brand-red);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    .brand-text {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--ink-strong);
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 12px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      color: var(--ink-mid);
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: var(--radius-s);
+      white-space: nowrap;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .header-nav a:hover {
+      background: var(--brand-red-light);
+      color: var(--brand-red);
+      text-decoration: none;
+    }
+    .header-search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .header-search input {
+      width: 180px;
+      height: 34px;
+      border: 1px solid var(--line-strong);
+      border-radius: 20px;
+      padding: 0 14px;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s, width 0.3s;
+      background: var(--bg-soft);
+    }
+    .header-search input:focus {
+      border-color: var(--brand-red);
+      background: #fff;
+      width: 220px;
+    }
+    .header-search button {
+      height: 34px;
+      padding: 0 16px;
+      border: none;
+      border-radius: 20px;
+      background: var(--brand-red);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .header-search button:hover { background: var(--brand-red-dark); }
+
+    /* ===== 首屏 ===== */
+    .hero {
+      background: linear-gradient(135deg, #1a1a1a 0%, #3d0a12 40%, #d40025 100%);
+      color: #fff;
+      padding: 48px 0 52px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text { flex: 1 1 55%; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .hero-desc {
+      font-size: 15px;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.82);
+      max-width: 520px;
+      margin-bottom: 24px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff;
+      color: var(--brand-red);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 24px;
+      border-radius: 24px;
+      border: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      text-decoration: none;
+      color: var(--brand-red-dark);
+    }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 10px 24px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.4);
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.1);
+      text-decoration: none;
+      color: #fff;
+    }
+    .hero-visual {
+      flex: 0 0 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .hero-card-mini {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: var(--radius-m);
+      padding: 14px 18px;
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: background 0.2s;
+    }
+    .hero-card-mini:hover { background: rgba(255,255,255,0.16); }
+    .mini-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .mini-info { flex: 1; }
+    .mini-info strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .mini-info span {
+      font-size: 11px;
+      color: rgba(255,255,255,0.65);
+    }
+    .mini-arrow {
+      color: rgba(255,255,255,0.6);
+      font-size: 16px;
+    }
+
+    /* ===== 三栏布局 ===== */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 250px;
+      gap: 24px;
+      padding: 28px 0 48px;
+      align-items: start;
+    }
+
+    /* 左栏 */
+    .sidebar-left { position: sticky; top: var(--sticky-offset); }
+    .side-block {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 16px 14px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-s);
+    }
+    .side-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--ink-soft);
+      margin-bottom: 12px;
+      padding-left: 2px;
+    }
+    .channel-list li { margin-bottom: 2px; }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: var(--radius-s);
+      font-size: 13.5px;
+      color: var(--ink-body);
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+    .channel-list a:hover {
+      background: var(--brand-red-light);
+      color: var(--brand-red);
+      text-decoration: none;
+    }
+    .channel-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--line-strong);
+      flex-shrink: 0;
+    }
+    .channel-list a:hover .channel-dot { background: var(--brand-red); }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      padding: 3px 10px;
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--ink-mid);
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .tag-cloud a:hover {
+      background: var(--brand-red-light);
+      border-color: var(--brand-red);
+      color: var(--brand-red);
+      text-decoration: none;
+    }
+
+    /* 中栏 */
+    .content-main { min-width: 0; }
+    .panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-l);
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-s);
+    }
+    .panel-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink-strong);
+      margin-bottom: 6px;
+      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .panel-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      border-radius: 2px;
+      background: var(--brand-red);
+      flex-shrink: 0;
+    }
+    .panel-sub {
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin-bottom: 20px;
+      padding-left: 12px;
+    }
+
+    /* 内容简介 */
+    .intro-text p {
+      margin-bottom: 14px;
+      font-size: 14.5px;
+      line-height: 1.8;
+      color: var(--ink-body);
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-highlight {
+      background: var(--brand-red-light);
+      border-left: 3px solid var(--brand-red);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-s) var(--radius-s) 0;
+      font-size: 14px;
+      color: var(--ink-strong);
+      margin-bottom: 16px;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .content-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 18px;
+      background: var(--bg-soft);
+      transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-card:hover {
+      border-color: var(--brand-red);
+      box-shadow: var(--shadow-m);
+      transform: translateY(-2px);
+    }
+    .card-type {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--brand-red);
+      background: var(--brand-red-light);
+      padding: 2px 8px;
+      border-radius: 12px;
+      align-self: flex-start;
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink-strong);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--ink-mid);
+      line-height: 1.6;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11.5px;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    .card-meta .hot { color: var(--brand-red); font-weight: 600; }
+
+    /* 紧凑列表 */
+    .compact-list { display: flex; flex-direction: column; gap: 0; }
+    .compact-item {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px dashed var(--line);
+      font-size: 14px;
+      transition: background 0.15s;
+    }
+    .compact-item:last-child { border-bottom: none; }
+    .compact-item:hover { background: var(--bg-soft); border-radius: 4px; padding-left: 6px; }
+    .compact-index {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink-soft);
+      min-width: 20px;
+      font-variant-numeric: tabular-nums;
+    }
+    .compact-name {
+      font-weight: 500;
+      color: var(--ink-strong);
+      white-space: nowrap;
+    }
+    .compact-summary {
+      color: var(--ink-mid);
+      font-size: 13px;
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .compact-date {
+      font-size: 11.5px;
+      color: var(--ink-soft);
+      flex-shrink: 0;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .category-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 18px 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      background: var(--bg-soft);
+      text-decoration: none;
+      transition: all 0.18s;
+      text-align: center;
+    }
+    .category-card:hover {
+      border-color: var(--brand-red);
+      background: var(--brand-red-light);
+      text-decoration: none;
+    }
+    .cat-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+    }
+    .cat-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink-strong);
+    }
+    .cat-count {
+      font-size: 11px;
+      color: var(--ink-soft);
+    }
+
+    /* 深度解析 */
+    .deep-content h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink-strong);
+      margin: 22px 0 10px;
+      padding-left: 10px;
+      border-left: 3px solid var(--brand-red);
+      line-height: 1.4;
+    }
+    .deep-content h3:first-of-type { margin-top: 0; }
+    .deep-content p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--ink-body);
+      margin-bottom: 12px;
+    }
+    .deep-content ul {
+      margin: 10px 0 14px;
+      padding-left: 4px;
+    }
+    .deep-content ul li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 7px;
+      font-size: 13.5px;
+      color: var(--ink-body);
+      line-height: 1.7;
+    }
+    .deep-content ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--brand-red);
+    }
+
+    /* 体验指南 */
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+    .guide-step {
+      display: flex;
+      gap: 12px;
+      padding: 14px;
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+    }
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--brand-red);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-info strong {
+      display: block;
+      font-size: 13.5px;
+      color: var(--ink-strong);
+      margin-bottom: 3px;
+    }
+    .step-info span {
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      line-height: 1.5;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-list details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      background: var(--bg-soft);
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .faq-list details[open] {
+      border-color: var(--brand-red);
+      background: #fff;
+    }
+    .faq-list summary {
+      padding: 13px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink-strong);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: color 0.2s;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+';
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--brand-red);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-list details[open] summary::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+    .faq-list details[open] summary { color: var(--brand-red); }
+    .faq-answer {
+      padding: 0 16px 14px;
+      font-size: 13.5px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+    }
+
+    /* 用户评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .comment-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 14px 16px;
+      font-size: 13px;
+      line-height: 1.65;
+      color: var(--ink-body);
+    }
+    .comment-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--brand-red-light);
+      color: var(--brand-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .comment-name {
+      font-weight: 600;
+      font-size: 12.5px;
+      color: var(--ink-strong);
+    }
+    .comment-stars {
+      color: #f5a623;
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-left: auto;
+    }
+    .comment-text {
+      color: var(--ink-mid);
+      font-size: 12.5px;
+    }
+
+    /* 相关资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item h4 {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--ink-strong);
+      margin-bottom: 4px;
+    }
+    .news-meta {
+      font-size: 11.5px;
+      color: var(--ink-soft);
+      margin-bottom: 4px;
+      display: flex;
+      gap: 12px;
+    }
+    .news-summary {
+      font-size: 13px;
+      color: var(--ink-mid);
+      line-height: 1.6;
+    }
+
+    /* 相关推荐标签 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .rec-tags a {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 14px;
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--ink-body);
+      text-decoration: none;
+      transition: all 0.18s;
+    }
+    .rec-tags a:hover {
+      background: var(--brand-red-light);
+      border-color: var(--brand-red);
+      color: var(--brand-red);
+      text-decoration: none;
+    }
+    .rec-tags a::before {
+      content: '→';
+      font-size: 11px;
+      color: var(--brand-red);
+    }
+
+    /* 右栏 */
+    .sidebar-right { position: sticky; top: var(--sticky-offset); }
+    .toc-list li { margin-bottom: 3px; }
+    .toc-list a {
+      display: block;
+      padding: 5px 10px;
+      font-size: 13px;
+      color: var(--ink-mid);
+      border-radius: var(--radius-s);
+      border-left: 2px solid transparent;
+      text-decoration: none;
+      transition: all 0.15s;
+      line-height: 1.5;
+    }
+    .toc-list a:hover, .toc-list a.active {
+      background: var(--brand-red-light);
+      color: var(--brand-red);
+      border-left-color: var(--brand-red);
+      text-decoration: none;
+    }
+
+    .hot-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px dashed var(--line);
+      font-size: 13px;
+    }
+    .hot-list li:last-child { border-bottom: none; }
+    .hot-rank {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      background: var(--bg-soft);
+      color: var(--ink-soft);
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hot-list li:nth-child(1) .hot-rank { background: var(--brand-red); color: #fff; }
+    .hot-list li:nth-child(2) .hot-rank { background: #ff6b6b; color: #fff; }
+    .hot-list li:nth-child(3) .hot-rank { background: #ffa94d; color: #fff; }
+    .hot-name {
+      flex: 1;
+      color: var(--ink-body);
+      font-size: 12.5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .hot-heat {
+      font-size: 11px;
+      color: var(--ink-soft);
+      flex-shrink: 0;
+    }
+
+    .extend-links li { margin-bottom: 6px; }
+    .extend-links a {
+      font-size: 13px;
+      color: var(--ink-mid);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 0;
+      transition: color 0.15s;
+    }
+    .extend-links a:hover { color: var(--brand-red); text-decoration: underline; }
+    .extend-links a::before {
+      content: '·';
+      color: var(--brand-red);
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    /* ===== 页尾 ===== */
+    .site-footer {
+      background: #1a1a1a;
+      color: rgba(255,255,255,0.7);
+      padding: 40px 0 24px;
+      font-size: 13px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .footer-brand .brand-mark {
+      width: 32px;
+      height: 32px;
+      font-size: 17px;
+      border-radius: 8px;
+    }
+    .footer-brand-text {
+      font-weight: 700;
+      font-size: 15px;
+      color: #fff;
+    }
+    .footer-desc {
+      font-size: 12.5px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      max-width: 300px;
+    }
+    .footer-col h4 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 12px;
+    }
+    .footer-col li { margin-bottom: 6px; }
+    .footer-col a {
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover { color: #fff; text-decoration: underline; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* 搜索无结果 */
+    .no-result {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      color: var(--ink-soft);
+      font-size: 14px;
+      background: var(--bg-soft);
+      border-radius: var(--radius-m);
+      margin-top: 10px;
+    }
+
+    /* 焦点可见 */
+    a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--brand-red);
+      outline-offset: 2px;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 1100px) {
+      .main-layout { grid-template-columns: 160px minmax(0, 1fr); }
+      .sidebar-right { display: none; }
+      .header-search input { width: 140px; }
+      .header-search input:focus { width: 160px; }
+    }
+    @media (max-width: 820px) {
+      .main-layout { grid-template-columns: 1fr; gap: 16px; }
+      .sidebar-left { position: static; display: none; }
+      .hero h1 { font-size: 28px; }
+      .hero-inner { flex-direction: column; gap: 28px; }
+      .hero-visual { flex: none; width: 100%; max-width: 400px; }
+      .header-nav { display: none; }
+      .header-search { margin-left: auto; }
+      .header-search input { width: 120px; }
+      .header-search input:focus { width: 140px; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .panel { padding: 22px 18px; }
+      .sticky-wrap { position: sticky; }
+      :root { --sticky-offset: 100px; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 14px; }
+      .hero { padding: 32px 0 36px; }
+      .hero h1 { font-size: 24px; }
+      .hero-desc { font-size: 14px; }
+      .header-inner { height: 56px; gap: 10px; }
+      .brand-text { font-size: 14px; }
+      .header-search input { width: 100px; height: 30px; font-size: 12px; }
+      .header-search button { height: 30px; padding: 0 10px; font-size: 12px; }
+      .panel { padding: 18px 14px; border-radius: var(--radius-m); }
+      .panel-title { font-size: 17px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .compact-summary { display: none; }
+      .guide-steps { grid-template-columns: 1fr; }
+      .announce-bar .container { font-size: 11px; }
+      .announce-bar strong { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-wrap">
+  <div class="announce-bar">
+    <div class="container">
+      <strong>更新</strong>
+      <span>搜索、邮箱、地图、翻译等核心服务入口已整理 · 桌面端与移动端适配指引同步上线</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/#top" aria-label="yandex官网入口网址 首页">
+        <span class="brand-mark" aria-hidden="true">Y</span>
+        <span class="brand-text">yandex官网入口网址</span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#intro">平台介绍</a>
+        <a href="/#hot">热门内容</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+      </nav>
+      <div class="header-search">
+        <input type="search" id="siteSearch" placeholder="搜索本页内容…" aria-label="搜索本页内容">
+        <button id="searchBtn" type="button">搜索</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">◆ 搜索服务 · 导航指引</div>
+      <h1>yandex官网入口网址</h1>
+      <p class="hero-desc">
+        为需要快速定位Yandex搜索、邮箱、地图、翻译等核心功能的中文用户，整理入口路径与使用场景说明。覆盖桌面端与移动端入口差异、登录流程、功能对比与常见问题，帮助你在不同设备上高效抵达目标服务。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#hot">查看热门入口 →</a>
+        <a class="btn-ghost" href="/#guide">使用指引</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card-mini">
+        <div class="mini-icon">🔍</div>
+        <div class="mini-info">
+          <strong>搜索入口</strong>
+          <span>网页 / 图片 / 视频检索</span>
+        </div>
+        <span class="mini-arrow">›</span>
+      </div>
+      <div class="hero-card-mini">
+        <div class="mini-icon">✉️</div>
+        <div class="mini-info">
+          <strong>邮箱登录</strong>
+          <span>邮件收发 / 附件管理</span>
+        </div>
+        <span class="mini-arrow">›</span>
+      </div>
+      <div class="hero-card-mini">
+        <div class="mini-icon">🗺️</div>
+        <div class="mini-info">
+          <strong>地图导航</strong>
+          <span>路线规划 / 地点检索</span>
+        </div>
+        <span class="mini-arrow">›</span>
+      </div>
+      <div class="hero-card-mini">
+        <div class="mini-icon">🌐</div>
+        <div class="mini-info">
+          <strong>翻译工具</strong>
+          <span>文本 / 网页翻译</span>
+        </div>
+        <span class="mini-arrow">›</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="container main-layout">
+
+  <!-- 左栏 -->
+  <aside class="sidebar-left" aria-label="频道导航与分类筛选">
+    <div class="side-block">
+      <div class="side-title">频道导航</div>
+      <ul class="channel-list">
+        <li><a href="/#intro"><span class="channel-dot"></span>平台介绍</a></li>
+        <li><a href="/#hot"><span class="channel-dot"></span>热门内容推荐</a></li>
+        <li><a href="/#latest"><span class="channel-dot"></span>最新更新动态</a></li>
+        <li><a href="/#category"><span class="channel-dot"></span>分类入口</a></li>
+        <li><a href="/#deep"><span class="channel-dot"></span>深度解析</a></li>
+        <li><a href="/#guide"><span class="channel-dot"></span>体验指南</a></li>
+        <li><a href="/#faq"><span class="channel-dot"></span>常见问答</a></li>
+        <li><a href="/#comments"><span class="channel-dot"></span>用户评论</a></li>
+        <li><a href="/#news"><span class="channel-dot"></span>相关资讯</a></li>
+        <li><a href="/#recommend"><span class="channel-dot"></span>相关推荐</a></li>
+      </ul>
+    </div>
+    <div class="side-block">
+      <div class="side-title">热门标签</div>
+      <div class="tag-cloud">
+        <a href="/#hot">搜索入口导航</a>
+        <a href="/#hot">邮箱登录指引</a>
+        <a href="/#hot">地图服务入口</a>
+        <a href="/#guide">桌面端使用</a>
+        <a href="/#guide">移动端适配</a>
+        <a href="/#deep">功能对比</a>
+        <a href="/#faq">登录问题</a>
+        <a href="/#category">翻译工具</a>
+        <a href="/#latest">更新动态</a>
+        <a href="/#recommend">替代入口</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 中栏 -->
+  <main class="content-main">
+
+    <!-- 1. 内容简介 -->
+    <section class="panel" id="intro">
+      <h2 class="panel-title">平台介绍与服务定位</h2>
+      <p class="panel-sub">了解Yandex核心功能矩阵与适用场景</p>
+      <div class="intro-text">
+        <div class="intro-highlight">
+          对于希望快速找到 <strong>yandex官网入口网址</strong> 的用户，这里整理了搜索、邮箱、地图、翻译等核心服务的入口路径与使用说明，覆盖桌面端与移动端场景。
+        </div>
+        <p>Yandex 作为俄语区广泛使用的互联网服务品牌，旗下产品覆盖网页搜索、电子邮箱、地图导航、在线翻译、云存储等多个方向。中文用户在寻找入口时，常遇到域名后缀差异、服务跳转和登录方式选择等问题。本文围绕搜索入口导航、邮箱登录指引、地图服务入口、翻译功能入口等高频需求，提供清晰的路径梳理。</p>
+        <p>从使用场景来看，搜索服务适合日常信息检索与学术资料查找；邮箱服务适合需要国际邮件往来的用户；地图导航在跨境出行和位置查询时较为实用；翻译工具则适合处理俄语与中文之间的文本转换。不同服务在桌面端和移动端的入口位置略有差异，部分功能需要登录账号后使用。</p>
+        <p>如果你关注的是“搜索入口导航”或“邮箱登录指引”，可优先查看热门内容推荐板块；如果更在意“功能对比”与“替代入口”，深度解析部分提供了更细的说明。页面内所有跳转均为站内锚点，方便逐项浏览。</p>
+      </div>
+    </section>
+
+    <!-- 2. 热门内容推荐 -->
+    <section class="panel" id="hot">
+      <h2 class="panel-title">热门内容推荐</h2>
+      <p class="panel-sub">按访问热度与实用度整理的入口指引卡片</p>
+      <div class="card-grid">
+        <article class="content-card">
+          <span class="card-type">搜索入口</span>
+          <h3 class="card-title">网页搜索与图片检索入口</h3>
+          <p class="card-desc">覆盖网页、图片、视频三类检索场景，适合日常信息查找与素材收集。桌面端首页即可直达。</p>
+          <div class="card-meta"><span class="hot">热度 9.6</span><span>更新 6月2日</span></div>
+        </article>
+        <article class="content-card">
+          <span class="card-type">邮箱登录</span>
+          <h3 class="card-title">Yandex Mail 登录与收件管理</h3>
+          <p class="card-desc">说明邮箱登录入口位置、附件上传限制与多设备同步设置，适合国际邮件往来用户。</p>
+          <div class="card-meta"><span class="hot">热度 9.3</span><span>更新 6月1日</span></div>
+        </article>
+        <article class="content-card">
+          <span class="card-type">地图导航</span>
+          <h3 class="card-title">地图服务入口与路线规划</h3>
+          <p class="card-desc">介绍地图检索、公共交通路线和离线地图的入口路径，适合跨境出行与位置查询。</p>
+          <div class="card-meta"><span class="hot">热度 8.9</span><span>更新 5月30日</span></div>
+        </article>
+        <article class="content-card">
+          <span class="card-type">翻译工具</span>
+          <h3 class="card-title">文本与网页翻译入口说明</h3>
+          <p class="card-desc">梳理文本翻译、网页翻译和图片翻译的入口差异，适合处理俄语与中文互译需求。</p>
+          <div class="card-meta"><span class="hot">热度 8.7</span><span>更新 5月29日</span></div>
+        </article>
+        <article class="content-card">
+          <span class="card-type">桌面端</span>
+          <h3 class="card-title">桌面端浏览器入口适配</h3>
+          <p class="card-desc">说明在常见浏览器中访问入口的注意事项，包括书签保存与页面缩放设置。</p>
+          <div class="card-meta"><span class="hot">热度 8.5</span><span>更新 5月28日</span></div>
+        </article>
+        <article class="content-card">
+          <span class="card-type">移动端</span>
+          <h3 class="card-title">移动端服务入口与页面适配</h3>
+          <p class="card-desc">介绍手机浏览器访问时的页面布局差异，以及添加到主屏幕的操作路径。</p>
+          <div class="card-meta"><span class="hot">热度 8.2</span><span>更新 5月27日</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. 最新更新动态 -->
+    <section class="panel" id="latest">
+      <h2 class="panel-title">最新更新动态</h2>
+      <p class="panel-sub">近期入口调整与功能变化摘要</p>
+      <div class="compact-list">
+        <div class="compact-item"><span class="compact-index">01</span><span class="compact-name">搜索首页</span><span class="compact-summary">搜索结果页筛选栏布局微调，图片检索新增尺寸过滤</span><span class="compact-date">6月2日</span></div>
+        <div class="compact-item"><span class="compact-index">02</span><span class="compact-name">邮箱登录</span><span class="compact-summary">登录验证流程增加设备确认步骤，支持备用邮箱找回</span><span class="compact-date">6月1日</span></div>
+        <div class="compact-item"><span class="compact-index">03</span><span class="compact-name">地图服务</span><span class="compact-summary">公共交通路线规划界面更新，站点信息展示更紧凑</span><span class="compact-date">5月30日</span></div>
+        <div class="compact-item"><span class="compact-index">04</span><span class="compact-name">翻译工具</span><span class="compact-summary">网页翻译入口新增语言自动检测提示，支持更多语种</span><span class="compact-date">5月29日</span></div>
+        <div class="compact-item"><span class="compact-index">05</span><span class="compact-name">桌面端适配</span><span class="compact-summary">大屏浏览器下页面边距调整，阅读区宽度更舒适</span><span class="compact-date">5月28日</span></div>
+        <div class="compact-item"><span class="compact-index">06</span><span class="compact-name">移动端适配</span><span class="compact-summary">手机浏览器地址栏颜色主题同步，减少视觉跳跃</span><span class="compact-date">5月27日</span></div>
+        <div class="compact-item"><span class="compact-index">07</span><span class="compact-name">账号安全</span><span class="compact-summary">登录页增加安全提示区域，提醒核对域名与证书信息</span><span class="compact-date">5月26日</span></div>
+        <div class="compact-item"><span class="compact-index">08</span><span class="compact-name">云存储</span><span class="compact-summary">文件分享链接设置项调整，权限选择更直观</span><span class="compact-date">5月25日</span></div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="panel" id="category">
+      <h2 class="panel-title">分类入口</h2>
+      <p class="panel-sub">按服务类型快速定位目标功能</p>
+      <div class="category-grid">
+        <a class="category-card" href="/#hot">
+          <span class="cat-icon">🔍</span>
+          <span class="cat-name">网页搜索</span>
+          <span class="cat-count">检索入口</span>
+        </a>
+        <a class="category-card" href="/#hot">
+          <span class="cat-icon">🖼️</span>
+          <span class="cat-name">图片搜索</span>
+          <span class="cat-count">素材查找</span>
+        </a>
+        <a class="category-card" href="/#hot">
+          <span class="cat-icon">✉️</span>
+          <span class="cat-name">邮箱登录</span>
+          <span class="cat-count">邮件管理</span>
+        </a>
+        <a class="category-card" href="/#hot">
+          <span class="cat-icon">🗺️</span>
+          <span class="cat-name">地图导航</span>
+          <span class="cat-count">路线规划</span>
+        </a>
+        <a class="category-card" href="/#hot">
+          <span class="cat-icon">🌐</span>
+          <span class="cat-name">文本翻译</span>
+          <span class="cat-count">语言转换</span>
+        </a>
+        <a class="category-card" href="/#guide">
+          <span class="cat-icon">💻</span>
+          <span class="cat-name">桌面端</span>
+          <span class="cat-count">浏览器访问</span>
+        </a>
+        <a class="category-card" href="/#guide">
+          <span class="cat-icon">📱</span>
+          <span class="cat-name">移动端</span>
+          <span class="cat-count">手机适配</span>
+        </a>
+        <a class="category-card" href="/#deep">
+          <span class="cat-icon">📊</span>
+          <span class="cat-name">功能对比</span>
+          <span class="cat-count">选择参考</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析正文 -->
+    <section class="panel" id="deep">
+      <h2 class="panel-title">深度解析：入口选择与功能对比</h2>
+      <p class="panel-sub">梳理不同服务入口的差异与适用场景</p>
+      <div class="deep-content">
+        <h3>搜索入口的两种常见路径</h3>
+        <p>中文用户寻找 yandex官网入口网址 时，通常面临两种路径：一是直接访问搜索首页，二是在已登录账号后从个人面板进入。搜索首页适合快速发起查询，无需登录即可使用网页、图片和视频检索；个人面板则集成了邮箱、云存储等服务的快捷入口，适合高频用户。两种路径在桌面端都容易切换，移动端则因页面布局不同而略有差异。</p>
+        <p>如果你主要使用搜索功能，建议将搜索首页保存为书签；如果需要同时管理邮件和文件，登录后的个人面板会更集中。需要注意的是，部分服务在未登录状态下功能受限，例如邮箱和云存储必须登录后才能操作。</p>
+
+        <h3>邮箱登录与账号安全要点</h3>
+        <p>邮箱登录是中文用户访问频率较高的功能之一。登录页面通常提供账号密码输入框，以及备用邮箱找回、手机验证等辅助入口。在公共设备上登录时，建议留意“保持登录状态”选项是否勾选，避免账号信息留存。若遇到登录异常，可先核对域名是否与官方一致，再检查网络环境与浏览器版本。</p>
+        <ul>
+          <li>登录前确认地址栏域名拼写，避免误入仿冒页面。</li>
+          <li>启用两步验证可提升账号安全性，但需提前绑定备用联系方式。</li>
+          <li>多设备同步时，注意检查邮件客户端是否使用授权码而非主密码。</li>
+          <li>长期未登录的账号可能触发安全验证，按页面提示操作即可。</li>
+        </ul>
+
+        <h3>地图与翻译工具的场景区分</h3>
+        <p>地图服务入口适合查询地点、规划公共交通路线和查看周边设施，桌面端与移动端的界面布局差异较大。桌面端地图视野更宽，适合路线规划；移动端则更侧重定位与步行导航。翻译工具入口覆盖文本翻译和网页翻译，文本翻译适合短句与文档片段，网页翻译适合整页内容快速浏览，但需注意排版变化可能影响阅读。</p>
+        <p>在功能对比方面，搜索、邮箱、地图、翻译四类服务各有侧重，不存在“哪个更好”的绝对结论，更多取决于使用场景。日常信息检索优先搜索入口；国际邮件往来优先邮箱登录；出行与位置查询优先地图服务；语言转换需求优先翻译工具。理解这些差异后，再结合设备与网络环境选择入口，效率会更高。</p>
+
+        <h3>桌面端与移动端的入口差异</h3>
+        <p>桌面端浏览器访问时，页面通常展示完整导航栏和侧边栏，功能入口一目了然；移动端浏览器受屏幕宽度限制，导航会折叠为菜单或底部标签栏，部分服务入口需要二次点击才能到达。若你经常在手机上使用，可将常用服务页面添加到主屏幕，减少重复输入地址的步骤。</p>
+        <p>此外，桌面端和移动端在登录状态同步上通常保持一致，但个别服务在移动端可能引导下载独立应用。若不想安装应用，可选择在浏览器中继续使用网页版，功能覆盖基本操作。</p>
+      </div>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section class="panel" id="guide">
+      <h2 class="panel-title">体验指南</h2>
+      <p class="panel-sub">从访问到收藏的四个步骤</p>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <div class="step-num">1</div>
+          <div class="step-info">
+            <strong>选择入口</strong>
+            <span>根据需求选择搜索、邮箱、地图或翻译入口，桌面端可直接点击导航。</span>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">2</div>
+          <div class="step-info">
+            <strong>登录与验证</strong>
+            <span>需要账号的服务按提示登录，留意设备确认与安全验证步骤。</span>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">3</div>
+          <div class="step-info">
+            <strong>收藏与追更</strong>
+            <span>将常用页面加入浏览器书签，或添加到手机主屏幕，减少重复查找。</span>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">4</div>
+          <div class="step-info">
+            <strong>扩展使用</strong>
+            <span>根据场景组合使用多个服务，例如搜索后翻译网页，或地图查询后邮件分享。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="panel" id="faq">
+      <h2 class="panel-title">常见问答</h2>
+      <p class="panel-sub">围绕入口、登录与功能选择的典型问题</p>
+      <div class="faq-list">
+        <details>
+          <summary>yandex官网入口网址适合哪些人使用？</summary>
+          <div class="faq-answer">适合需要查找俄语区信息、进行国际邮件往来、查询跨境路线或处理俄语翻译的中文用户。如果你只需要偶尔检索信息，搜索入口即可满足；如果需要邮件和云存储，建议登录账号后使用完整功能。</div>
+        </details>
+        <details>
+          <summary>搜索入口和邮箱登录入口有什么区别？</summary>
+          <div class="faq-answer">搜索入口无需登录即可发起网页、图片和视频检索，适合快速查询；邮箱登录入口需要账号密码验证，进入后可使用邮件收发、附件管理和联系人等功能。两者在个人面板中可相互跳转。</div>
+        </details>
+        <details>
+          <summary>移动端访问入口和桌面端一样吗？</summary>
+          <div class="faq-answer">核心功能一致，但页面布局不同。移动端导航折叠、按钮间距调整，部分服务会引导下载应用。若不想安装应用，可在浏览器中继续使用网页版，基本操作不受影响。</div>
+        </details>
+        <details>
+          <summary>登录时提示验证失败怎么办？</summary>
+          <div class="faq-answer">先核对账号密码是否正确，检查网络连接是否稳定。若启用了两步验证，确认验证码是否在有效期内。仍无法登录时，可使用备用邮箱或手机号找回入口，按页面提示操作。</div>
+        </details>
+        <details>
+          <summary>地图和翻译工具可以配合使用吗？</summary>
+          <div class="faq-answer">可以。例如先在地图服务中查询地点，复制地址信息到翻译工具中转换语言；或在浏览外文网页时使用网页翻译，再通过搜索入口查找相关背景信息。组合使用能覆盖更多场景。</div>
+        </details>
+        <details>
+          <summary>桌面端和移动端哪个更适合日常使用？</summary>
+          <div class="faq-answer">取决于使用习惯。桌面端视野宽、导航完整，适合长时间检索和路线规划；移动端便携、可添加到主屏幕，适合碎片化查询和出行场景。两者登录状态通常同步，可按场景切换。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="panel" id="comments">
+      <h2 class="panel-title">用户评论</h2>
+      <p class="panel-sub">来自不同使用场景的反馈摘录</p>
+      <div class="comment-grid">
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">林</span><span class="comment-name">林间小路</span><span class="comment-stars">★★★★★</span></div>
+          <p class="comment-text">搜索入口找起来很方便，图片检索的尺寸过滤确实实用，做素材收集省了不少时间。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">陈</span><span class="comment-name">陈默</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">邮箱登录指引写得清楚，两步验证那部分提醒到位，之前一直没注意备用邮箱的设置。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">苏</span><span class="comment-name">苏打水</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">移动端页面适配不错，添加到主屏幕后打开速度挺快，就是有些按钮间距偏小。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">赵</span><span class="comment-name">赵一鸣</span><span class="comment-stars">★★★★★</span></div>
+          <p class="comment-text">地图路线规划在桌面端用着很顺手，公共交通换乘信息展示比之前清晰。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">周</span><span class="comment-name">周周</span><span class="comment-stars">★★★☆☆</span></div>
+          <p class="comment-text">翻译工具网页翻译有时候排版会乱，不过短文本翻译准确度还可以，看场景用吧。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">吴</span><span class="comment-name">吴桐</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">功能对比那部分有帮助，之前分不清搜索和邮箱入口的关系，现在清楚多了。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">郑</span><span class="comment-name">郑好</span><span class="comment-stars">★★★★★</span></div>
+          <p class="comment-text">桌面端书签保存的建议很实用，现在打开浏览器直接点书签就能进搜索页。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">孙</span><span class="comment-name">孙小满</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">账号安全提示挺贴心，公共设备登录确实要注意那个保持登录的选项。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">李</span><span class="comment-name">李子树</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">移动端不想装应用，网页版用着也还行，基本功能都能覆盖，适合偶尔用。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">王</span><span class="comment-name">王观</span><span class="comment-stars">★★★★★</span></div>
+          <p class="comment-text">分类入口按服务类型分得很清楚，找地图和翻译不用来回翻页面了。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">何</span><span class="comment-name">何叶</span><span class="comment-stars">★★★☆☆</span></div>
+          <p class="comment-text">页面内容挺全，不过有些说明可以再简短一点，信息密度略高。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">许</span><span class="comment-name">许言</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">FAQ里验证失败那个问题遇到过，按提示用备用邮箱找回来了，流程还算顺。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">郭</span><span class="comment-name">郭外</span><span class="comment-stars">★★★★★</span></div>
+          <p class="comment-text">深度解析里桌面端和移动端的差异讲得细，之前一直以为功能完全一样。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top"><span class="avatar">高</span><span class="comment-name">高远</span><span class="comment-stars">★★★★☆</span></div>
+          <p class="comment-text">地图和翻译配合使用的思路不错，跨境查资料时能省一步。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="panel" id="news">
+      <h2 class="panel-title">相关资讯</h2>
+      <p class="panel-sub">近期与入口使用相关的信息摘要</p>
+      <div class="news-list">
+        <div class="news-item">
+          <h4>搜索服务筛选栏布局调整，图片检索体验优化</h4>
+          <div class="news-meta"><span>5月30日</span><span>来源：页面整理</span></div>
+          <p class="news-summary">搜索结果页的筛选栏位置微调，图片检索新增尺寸和颜色过滤选项，查找素材更直观。</p>
+        </div>
+        <div class="news-item">
+          <h4>邮箱登录流程增加设备确认环节</h4>
+          <div class="news-meta"><span>5月28日</span><span>来源：页面整理</span></div>
+          <p class="news-summary">新设备登录时需确认设备信息，支持备用邮箱找回，账号安全性有所提升。</p>
+        </div>
+        <div class="news-item">
+          <h4>地图公共交通路线界面更新</h4>
+          <div class="news-meta"><span>5月26日</span><span>来源：页面整理</span></div>
+          <p class="news-summary">路线规划页面重新排布站点信息，换乘提示更紧凑，桌面端查看长路线更方便。</p>
+        </div>
+        <div class="news-item">
+          <h4>翻译工具网页翻译支持语言自动检测</h4>
+          <div class="news-meta"><span>5月24日</span><span>来源：页面整理</span></div>
+          <p class="news-summary">网页翻译入口新增语言检测提示，减少手动选择语种的步骤，覆盖更多语种组合。</p>
+        </div>
+        <div class="news-item">
+          <h4>移动端页面布局优化，减少视觉跳跃</h4>
+          <div class="news-meta"><span>5月22日</span><span>来源：页面整理</span></div>
+          <p class="news-summary">手机浏览器地址栏主题同步调整，页面加载时颜色过渡更自然，阅读干扰减少。</p>
+        </div>
+        <div class="news-item">
+          <h4>云存储分享链接权限设置更直观</h4>
+          <div class="news-meta"><span>5月20日</span><span>来源：页面整理</span></div>
+          <p class="news-summary">文件分享链接的权限选择项重新归类，查看、编辑、下载权限区分更清晰。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="panel" id="recommend">
+      <h2 class="panel-title">相关推荐</h2>
+      <p class="panel-sub">按具体内容方向延伸的标签索引</p>
+      <div class="rec-tags">
+        <a href="/#hot">搜索入口导航</a>
+        <a href="/#hot">邮箱登录指引</a>
+        <a href="/#hot">地图服务入口</a>
+        <a href="/#deep">翻译功能对比</a>
+        <a href="/#guide">桌面端使用</a>
+        <a href="/#guide">移动端适配</a>
+        <a href="/#faq">登录验证问题</a>
+        <a href="/#latest">近期更新动态</a>
+        <a href="/#deep">替代入口选择</a>
+      </div>
+    </section>
+
+    <!-- 11. 趋势观察 -->
+    <section class="panel" id="trend">
+      <h2 class="panel-title">趋势观察</h2>
+      <p class="panel-sub">从使用场景看入口需求的变化</p>
+      <div class="intro-text">
+        <p>从近期的使用反馈来看，中文用户对入口的需求正从“找到单一搜索页”转向“一站式管理多个服务”。邮箱登录与云存储的组合使用频率上升，地图与翻译工具的配合场景也在增加。桌面端仍承载深度检索和路线规划，移动端则更多用于碎片化查询和即时翻译。</p>
+        <p>在入口选择上，用户更关注页面加载速度、登录流程简洁性和安全提示的清晰度。将常用服务添加到书签或主屏幕，已成为减少重复操作的主要方式。对于高频用户，登录后个人面板的聚合入口比逐个访问更高效；对于低频用户，搜索首页的免登录检索仍是主要路径。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右栏 -->
+  <aside class="sidebar-right" aria-label="辅助阅读入口">
+    <div class="side-block">
+      <div class="side-title">页内目录</div>
+      <ul class="toc-list">
+        <li><a href="/#intro">平台介绍</a></li>
+        <li><a href="/#hot">热门内容推荐</a></li>
+        <li><a href="/#latest">最新更新动态</a></li>
+        <li><a href="/#category">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#recommend">相关推荐</a></li>
+      </ul>
+    </div>
+    <div class="side-block">
+      <div class="side-title">热门条目</div>
+      <ul class="hot-list">
+        <li><span class="hot-rank">1</span><span class="hot-name">网页搜索与图片检索入口</span><span class="hot-heat">9.6</span></li>
+        <li><span class="hot-rank">2</span><span class="hot-name">Yandex Mail 登录与收件管理</span><span class="hot-heat">9.3</span></li>
+        <li><span class="hot-rank">3</span><span class="hot-name">地图服务入口与路线规划</span><span class="hot-heat">8.9</span></li>
+        <li><span class="hot-rank">4</span><span class="hot-name">文本与网页翻译入口说明</span><span class="hot-heat">8.7</span></li>
+        <li><span class="hot-rank">5</span><span class="hot-name">桌面端浏览器入口适配</span><span class="hot-heat">8.5</span></li>
+        <li><span class="hot-rank">6</span><span class="hot-name">移动端服务入口与页面适配</span><span class="hot-heat">8.2</span></li>
+      </ul>
+    </div>
+    <div class="side-block">
+      <div class="side-title">延伸阅读</div>
+      <ul class="extend-links">
+        <li><a href="/#deep">搜索入口的两种常见路径</a></li>
+        <li><a href="/#deep">邮箱登录与账号安全要点</a></li>
+        <li><a href="/#deep">地图与翻译工具的场景区分</a></li>
+        <li><a href="/#deep">桌面端与移动端的入口差异</a></li>
+        <li><a href="/#guide">从访问到收藏的四个步骤</a></li>
+        <li><a href="/#faq">登录验证失败怎么办</a></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">Y</span>
+          <span class="footer-brand-text">yandex官网入口网址</span>
+        </div>
+        <p class="footer-desc">围绕搜索、邮箱、地图、翻译等核心服务，整理入口路径与使用场景说明，帮助中文用户在不同设备上快速定位目标功能。</p>
+      </div>
+      <div class="footer-col">
+        <h4>频道</h4>
+        <ul>
+          <li><a href="/#intro">平台介绍</a></li>
+          <li><a href="/#hot">热门内容</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#category">分类入口</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>内容</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>更多</h4>
+        <ul>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#recommend">相关推荐</a></li>
+          <li><a href="/#trend">趋势观察</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 yandex官网入口网址 · 内容整理页</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    'use strict';
+
+    // 本地搜索：隐藏/显示中栏板块，提供无结果反馈
+    var searchInput = document.getElementById('siteSearch');
+    var searchBtn = document.getElementById('searchBtn');
+    var main = document.querySelector('.content-main');
+    var noResult = null;
+
+    function createNoResult() {
+      if (!noResult) {
+        noResult = document.createElement('div');
+        noResult.className = 'no-result';
+        noResult.textContent = '未找到匹配的内容，请尝试其他关键词。';
+        main.appendChild(noResult);
+      }
+      return noResult;
+    }
+
+    function doSearch() {
+      var q = searchInput.value.trim().toLowerCase();
+      var sections = main.querySelectorAll('.panel');
+      var found = 0;
+      sections.forEach(function(sec){
+        if (!q) {
+          sec.style.display = '';
+          found++;
+          return;
+        }
+        var text = sec.textContent.toLowerCase();
+        if (text.indexOf(q) !== -1) {
+          sec.style.display = '';
+          found++;
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+      var nr = createNoResult();
+      if (found === 0 && q) {
+        nr.style.display = 'block';
+      } else {
+        nr.style.display = 'none';
+      }
+    }
+
+    if (searchBtn) {
+      searchBtn.addEventListener('click', doSearch);
+    }
+    if (searchInput) {
+      searchInput.addEventListener('keydown', function(e){
+        if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+      });
+      searchInput.addEventListener('input', function(){
+        if (searchInput.value.trim() === '') {
+          var sections = main.querySelectorAll('.panel');
+          sections.forEach(function(sec){ sec.style.display = ''; });
+          if (noResult) noResult.style.display = 'none';
+        }
+      });
+    }
+
+    // 目录高亮（可选轻量交互）
+    var tocLinks = document.querySelectorAll('.toc-list a');
+    var panels = main.querySelectorAll('.panel');
+    if (tocLinks.length && 'IntersectionObserver' in window) {
+      var map = {};
+      tocLinks.forEach(function(link){
+        var id = link.getAttribute('href').replace('/#','');
+        map[id] = link;
+      });
+      var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            tocLinks.forEach(function(l){ l.classList.remove('active'); });
+            var link = map[entry.target.id];
+            if (link) link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-100px 0px -60% 0px', threshold: 0.1 });
+      panels.forEach(function(p){ observer.observe(p); });
+    }
+  })();
+</script>
+
+</body>
+          </html>
